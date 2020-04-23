@@ -1,0 +1,5 @@
+SELECT A.name AS name1, A.image
+FROM products A, products B
+WHERE A.id <> B.id
+AND A.image = B.image 
+ORDER BY A.name;
