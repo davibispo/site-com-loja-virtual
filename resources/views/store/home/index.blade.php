@@ -18,8 +18,6 @@
             <div class="panel-footer text-center">
                 
                 <a href="{{route('add.cart', $product->id)}}">Adicionar ao Carrinho <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                <a href="{{route('add.cart', $product->id)}}">Adicionar ao Carrinho <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                <a href="{{route('add.cart', $product->id)}}">Adicionar ao Carrinho <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
