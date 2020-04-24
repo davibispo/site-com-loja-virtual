@@ -1,5 +1,5 @@
-SELECT A.name AS name1, A.image
+SELECT DISTINCT A.id, A.name, A.image
 FROM products A, products B
-WHERE A.id <> B.id
-AND A.image = B.image 
+WHERE A.image = B.image 
+AND A.id <> B.id
 ORDER BY A.name;
