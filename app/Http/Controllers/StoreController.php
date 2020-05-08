@@ -12,13 +12,13 @@ class StoreController extends Controller
 {
     public function index(Product $product)
     {
-        $products = $product->all()->sortBy('name');
+        $products = $product->all()->where('ativo', 1)->sortBy('name');
         //$products = DB::select('SELECT DISTINCT A.id, A.name, A.price, A.image
-          //                      FROM products A, products B
-            //                    WHERE A.image = B.image
-              //                  OR A.id <> B.id
-                //                ORDER BY A.name', [1]
-                  //              );
+        //                        FROM products A, products B
+        //                       WHERE A.image = B.image
+        //                        OR A.id <> B.id
+        //                        ORDER BY A.name', [1]
+        //                        );
         //dd($products);
         return view('store.home.index', compact('products'));
     }
