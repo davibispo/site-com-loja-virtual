@@ -5,7 +5,7 @@
 
 <table class="table table-striped">
     <tr>
-        <th>Item</th>
+        <th>Itens</th>
         <th>Preço</th>
         <th>Quantidade</th>
         <th>Sub. Total</th>
@@ -14,7 +14,7 @@
     @forelse($products as $product)
     <tr>
         <td>
-            <img src="{{url("assets/imgs/temp/{$product['item']->image}")}}" alt="" class="img-cart">
+            <!--<img src="{{url("assets/imgs/temp/{$product['item']->image}")}}" alt="" class="img-cart">-->
             {{$product['item']->name}}
         </td>
         <td>R$ {{number_format($product['item']->price, 2,'.',',')}}</td>
